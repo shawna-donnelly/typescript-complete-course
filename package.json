@@ -1,0 +1,24 @@
+{
+  "name": "typescript-complete-course",
+  "version": "1.0.0",
+  "description": "Complete course of typescript udemy course",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shawna-donnelly/typescript-complete-course.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shawna-donnelly/typescript-complete-course/issues"
+  },
+  "homepage": "https://github.com/shawna-donnelly/typescript-complete-course#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "lite-server": "^2.4.0"
+  }
+}
