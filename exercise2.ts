@@ -4,8 +4,8 @@ console.log(double(10));
 var greet = function(name: string = "Mark"){
     console.log("Hello, " + name);
 };
-greet();
-greet("Anna");
+//greet();
+//greet("Anna");
 
 var numbers = [-3, 33, 38, 5];
 console.log(Math.min(...numbers));

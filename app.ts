@@ -1,4 +1,9 @@
-class Person{
+//import {PI, calculateCircumference} from './math/circle';
+//import {calculateRectangle} from './math/rectangle';
+
+
+
+/*class Person{
     name: string;
     private type: string;
     protected age: number = 32;
@@ -96,9 +101,9 @@ console.log(newProject);
 
 class OnlyOne{
     private static instance: OnlyOne;
-    public readonly name: string;
+    public readonly name3: string;
     private constructor(public name: string) {
-        this.name = name;
+        this.name3 = name;
     }
 
     static getInstance(){
@@ -112,6 +117,30 @@ class OnlyOne{
 //let wrong = new OnlyOne("The Only One");
 let right = OnlyOne.getInstance();
 
-console.log(right.name);
+console.log(right.name3);
 //right.name = "Something else";
 //console.log(right.name);
+
+
+console.log(calculateRectangle(10,20));
+console.log(calculateCircumference(10));
+console.log(PI);
+*/
+
+function hello(person: {name: string}){
+    console.log("Hello2, ") + person.name;
+}
+
+function changeName(person: {name: string}){
+    person.name = "Anna";
+    console.log("Hiya! "  + person.name);
+}
+
+const person = {
+    name: "Shawna",
+    age: 32
+};
+
+hello(person);
+changeName(person);
+hello(person);

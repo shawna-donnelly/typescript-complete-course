@@ -5,8 +5,8 @@ var greet = function (name) {
     if (name === void 0) { name = "Mark"; }
     console.log("Hello, " + name);
 };
-greet();
-greet("Anna");
+//greet();
+//greet("Anna");
 var numbers = [-3, 33, 38, 5];
 console.log(Math.min.apply(Math, numbers));
 var newArray = [55, 20];

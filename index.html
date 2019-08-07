@@ -10,12 +10,27 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
+        <script src="node_modules/systemjs/dist/system.js"></script>
+
     </head>
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+        <script>
+            //set our baseURL reference path
+            SystemJS.config({
+                baseURL: '/',
+                packages:{
+                    '/':{
+                            defaultExtension: 'js'
+                        }
+                }
+            });
+
+            //loads /js/app.js
+            SystemJS.import('app.js');
+        </script>
         
-        <script src="app.js" async defer></script>
     </body>
-</html>>
+</html>

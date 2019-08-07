@@ -1,10 +1,10 @@
 // Exercise 1 - How was your TypeScript Class?
 class Car {
-    name: string;
+    name2: string;
     acceleration: number = 0;
     
-    constructor(name: string){
-        this.name = name;
+    constructor(name2: string){
+        this.name2 = name2;
     }
 
     honk(): void {
@@ -15,11 +15,12 @@ class Car {
         this.acceleration = this.acceleration + speed;
     }
 }
-var car = new Car("BMW");
+
+const car = new Car("BMW");
 car.honk();
-console.log(car.acceleration);
+console.log("Base Acceleration: " + car.acceleration);
 car.accelerate(10);
-console.log(car.acceleration);
+console.log("After Acceleration: " + car.acceleration);
  
 // Exercise 2 - Two objects, based on each other ...
 class BaseObject {
@@ -39,7 +40,7 @@ class Rectangle extends BaseObject{
 };
 
 let rectangle = new Rectangle(5,2);
-console.log(rectangle.calcSize());
+console.log("rectangle area: " + rectangle.calcSize());
  
 // Exercise 3 - Make sure to compile to ES5 (set the target in tsconfig.json)
 class Person2{
@@ -58,12 +59,12 @@ class Person2{
             this._firstName = value;
         }
         else {
-            this._firstName = "";
+            this._firstName = "Default";
         }
     }
 };
 
-let person2 = new Person2();
+const person2 = new Person2();
 
 console.log(person2.firstName);
 person2.firstName = "Ma";

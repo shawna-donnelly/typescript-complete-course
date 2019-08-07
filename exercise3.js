@@ -14,9 +14,9 @@ var __extends = (this && this.__extends) || (function () {
 })();
 // Exercise 1 - How was your TypeScript Class?
 var Car = /** @class */ (function () {
-    function Car(name) {
+    function Car(name2) {
         this.acceleration = 0;
-        this.name = name;
+        this.name2 = name2;
     }
     Car.prototype.honk = function () {
         console.log("Toooooooooot!");
@@ -29,9 +29,9 @@ var Car = /** @class */ (function () {
 }());
 var car = new Car("BMW");
 car.honk();
-console.log(car.acceleration);
+console.log("Base Acceleration: " + car.acceleration);
 car.accelerate(10);
-console.log(car.acceleration);
+console.log("After Acceleration: " + car.acceleration);
 // Exercise 2 - Two objects, based on each other ...
 var BaseObject = /** @class */ (function () {
     function BaseObject(width, length) {
@@ -55,7 +55,7 @@ var Rectangle = /** @class */ (function (_super) {
 }(BaseObject));
 ;
 var rectangle = new Rectangle(5, 2);
-console.log(rectangle.calcSize());
+console.log("rectangle area: " + rectangle.calcSize());
 // Exercise 3 - Make sure to compile to ES5 (set the target in tsconfig.json)
 var Person2 = /** @class */ (function () {
     function Person2() {
@@ -70,7 +70,7 @@ var Person2 = /** @class */ (function () {
                 this._firstName = value;
             }
             else {
-                this._firstName = "";
+                this._firstName = "Default";
             }
         },
         enumerable: true,
